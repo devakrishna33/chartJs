@@ -1,5 +1,6 @@
 $(document).ready(() => {
     const CHART = document.getElementById('lineChart');
+    Chart.defaults.global.hover.mode = 'nearest';
     var lineChart = new Chart(CHART, {
         // The type of chart we want to create
         type: 'line',
